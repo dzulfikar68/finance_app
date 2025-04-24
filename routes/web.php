@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return redirect()->route('transactions.index');
 });
 
 Auth::routes();
@@ -27,4 +28,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/transactions', [TransactionController::class, 'index'])->name('transactions.index');
     Route::get('/transactions/fetch', [TransactionController::class, 'fetchData'])->name('transactions.fetch');
     Route::get('/transactions/recap', [TransactionController::class, 'recap'])->name('transactions.recap');
+    Route::get('/transactions/export', [TransactionController::class, 'export'])->name('transactions.export');
+    Route::get('/transactions/visualize', [TransactionController::class, 'visualize'])->name('transactions.visualize');
 });
