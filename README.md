@@ -1,3 +1,12 @@
+JUST DO THIS:
+1. clone project in htdocs
+2. activate xampp (php & mysql)
+3. open terminal, access ./project-name
+4. command terminal "php artisan migration"
+5. command terminal "php artisan serve"
+6. command "npm run dev"
+7. please access the web
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
